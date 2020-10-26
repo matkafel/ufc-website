@@ -1,0 +1,933 @@
+.MainPage {
+  position: relative;
+
+  .home-page-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $blackColor;
+    background-image: url("../../Img/mainPage/main-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .container {
+      width: 85vw;
+      height: 100vh;
+      margin: 0 auto;
+    }
+    .text {
+      position: absolute;
+      top: 35%;
+      @media (min-width: 400px) and (orientation: portrait) {
+        top: 40%;
+      }
+
+      h1 {
+        color: $whiteColor;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        @media (min-width: 400px) and (orientation: portrait) {
+          font-size: 4.5rem;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          font-size: 8rem;
+          line-height: 6rem;
+        }
+        @media (min-width: 600px) and (orientation: landscape) {
+          font-size: 5.5rem;
+          line-height: 5rem;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          font-size: 8.5rem;
+          line-height: 8rem;
+        }
+        @media (min-width: 1400px) and (orientation: landscape) {
+          font-size: 14rem;
+          line-height: 12rem;
+        }
+      }
+      p {
+        color: $whiteColor;
+        text-align: center;
+        font-size: 1rem;
+        @media (min-width: 400px) and (orientation: portrait) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          font-size: 2.5rem;
+        }
+        @media (min-width: 600px) and (orientation: landscape) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          font-size: 2rem;
+        }
+        @media (min-width: 1400px) and (orientation: landscape) {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    .info-wrapper {
+      position: relative;
+      color: $whiteColor;
+      top: 75%;
+      display: flex;
+      @media (min-width: 500px) and (orientation: landscape) {
+        top: 70%;
+      }
+      @media (min-width: 600px) and (orientation: landscape) {
+        top: 68%;
+      }
+      @media (min-width: 1000px) and (orientation: landscape) {
+        top: 70%;
+      }
+
+      h2 {
+        font-size: 1rem;
+        text-decoration: underline;
+        @media (min-width: 400px) and (orientation: portrait) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          font-size: 2rem;
+        }
+        @media (min-width: 600px) and (orientation: landscape) {
+          font-size: 1.2rem;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          font-size: 2rem;
+        }
+        @media (min-width: 1400px) and (orientation: landscape) {
+          font-size: 3rem;
+        }
+      }
+
+      .schedule {
+        flex: 0.7;
+        @media (min-width: 600px) and (orientation: landscape) {
+          margin-right: 20px;
+        }
+        .schedule-flex {
+          display: flex;
+          justify-content: space-evenly;
+
+          h3 {
+            margin-top: 1.8rem;
+            font-size: 0.5rem;
+            text-align: center;
+            @media (min-width: 400px) and (orientation: portrait) {
+              margin-top: 2.5rem;
+              font-size: 1rem;
+            }
+            @media (min-width: 700px) and (orientation: portrait) {
+              margin-top: 4.5rem;
+              font-size: 2rem;
+            }
+            @media (min-width: 600px) and (orientation: landscape) {
+              font-size: 1.5rem;
+              margin-top: 4rem;
+            }
+            @media (min-width: 1000px) and (orientation: landscape) {
+              font-size: 2.2rem;
+              margin-top: 9rem;
+            }
+            @media (min-width: 1400px) and (orientation: landscape) {
+              font-size: 3rem;
+              margin-top: 11rem;
+            }
+          }
+          p {
+            text-align: center;
+            font-size: 0.4rem;
+            @media (min-width: 400px) and (orientation: portrait) {
+              font-size: 0.7rem;
+            }
+            @media (min-width: 700px) and (orientation: portrait) {
+              font-size: 1.2rem;
+            }
+            @media (min-width: 600px) and (orientation: landscape) {
+              font-size: 0.8rem;
+            }
+            @media (min-width: 1000px) and (orientation: landscape) {
+              font-size: 1.4rem;
+            }
+            @media (min-width: 1400px) and (orientation: landscape) {
+              font-size: 2.2rem;
+            }
+          }
+
+          .schedule-item {
+            margin-top: 0.5rem;
+            background-image: url("../../Img/mainPage/UFC254.jpg");
+            background-position: center center;
+            background-size: cover;
+            width: 30%;
+            height: 4.5rem;
+            border-radius: 20%;
+            transition: 0.2s;
+            @media (min-width: 400px) and (orientation: portrait) {
+              height: 6rem;
+            }
+            @media (min-width: 700px) and (orientation: portrait) {
+              height: 10rem;
+            }
+            @media (min-width: 600px) and (orientation: landscape) {
+              height: 8rem;
+            }
+            @media (min-width: 1000px) and (orientation: landscape) {
+              height: 15rem;
+            }
+            @media (min-width: 1400px) and (orientation: landscape) {
+              height: 20rem;
+              background-position: top center;
+            }
+            &:nth-child(2) {
+              background-image: url("../../Img/mainPage/UFC255.jpg");
+            }
+            &:nth-child(3) {
+              background-image: url("../../Img/mainPage/UFC256.jpg");
+            }
+          }
+        }
+      }
+      .latestNews {
+        flex: 0.3;
+
+        .lastNews {
+          margin: 5px 0;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          align-items: center;
+          @media (min-width: 700px) and (orientation: portrait) {
+            margin: 8px 0;
+          }
+          @media (min-width: 600px) and (orientation: landscape) {
+            margin: 8px 0;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            margin: 15px 0;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            margin: 18px 0;
+          }
+
+          .img {
+            background-image: url("../../Img/mainPage/news1.jpg");
+            background-position: center center;
+            background-size: cover;
+            width: 30%;
+            height: 2rem;
+            border-radius: 50%;
+            @media (min-width: 400px) and (orientation: portrait) {
+              height: 2.5rem;
+            }
+            @media (min-width: 700px) and (orientation: portrait) {
+              height: 5rem;
+            }
+            @media (min-width: 600px) and (orientation: landscape) {
+              height: 3.5rem;
+            }
+            @media (min-width: 1000px) and (orientation: landscape) {
+              height: 6.5rem;
+            }
+            @media (min-width: 1400px) and (orientation: landscape) {
+              height: 8.5rem;
+            }
+          }
+          .news2 {
+            background-image: url("../../Img/mainPage/news2.jpg");
+          }
+        }
+
+        p {
+          font-size: 0.1rem;
+          text-align: center;
+          @media (min-width: 400px) and (orientation: portrait) {
+            font-size: 0.7rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 1.2rem;
+          }
+          @media (min-width: 600px) and (orientation: landscape) {
+            font-size: 0.8rem;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 1.2rem;
+            margin-left: 20px;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            font-size: 2rem;
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .News {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    .container {
+      width: 85vw;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin: 3rem 0;
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      @media (min-width: 1200px) {
+        font-size: 4rem;
+        margin: 5rem 0;
+      }
+    }
+
+    .news-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 500px) {
+        flex-direction: row;
+      }
+      @media (min-width: 1200px) {
+        margin-top: 5%;
+      }
+
+      .info {
+        color: $whiteColor;
+        width: 60%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        border: 1px solid $borderColor;
+        padding: 10px;
+        font-size: 0.7rem;
+        background: linear-gradient(to left, #000000, #434343);
+        @media (min-width: 1000px) {
+          font-size: 1rem;
+        }
+        @media (min-width: 1600px) {
+          font-size: 1.8rem;
+          padding: 20px;
+        }
+      }
+
+      .bigNews {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 0.5rem;
+        background-image: url("../../Img/mainPage/newsBlachowicz.jpg");
+        background-position: center center;
+        background-size: cover;
+        @media (min-width: 500px) {
+          width: 44vw;
+          height: 70vh;
+          margin-bottom: 0rem;
+        }
+      }
+
+      .smallNews-flex {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .smallNews {
+          position: relative;
+          width: 100%;
+          height: 20vh;
+          margin: 0.5rem 0;
+          background-image: url("../../Img/mainPage/newsChandler.jpg");
+          background-position: top center;
+          background-size: cover;
+          @media (min-width: 500px) {
+            width: 44vw;
+            height: 33vh;
+            margin-bottom: 0rem;
+            margin: 0;
+            margin-left: 2vw;
+          }
+          &:nth-child(2) {
+            background-image: url("../../Img/mainPage/newsUsman.jpg");
+          }
+        }
+      }
+    }
+  }
+
+  .Big-picture {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $blackColor;
+    background-image: url("../../Img/mainPage/conorBg.jpg");
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .container {
+      width: 85vw;
+      margin: 0 auto;
+    }
+
+    h2 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      bottom: 10%;
+      line-height: 4.5rem;
+      text-transform: uppercase;
+      color: $whiteColor;
+      font-size: 5rem;
+      font-weight: 800;
+      font-style: italic;
+      @media (min-width: 400px) {
+        font-size: 7rem;
+        line-height: 6.5rem;
+      }
+      @media (min-width: 700px) and (orientation: portrait) {
+        font-size: 13rem;
+        line-height: 12rem;
+      }
+      @media (min-width: 1000px) and (orientation: landscape) {
+        font-size: 12rem;
+        line-height: 11rem;
+      }
+      @media (min-width: 1600px) and (orientation: landscape) {
+        font-size: 18rem;
+        line-height: 17rem;
+      }
+    }
+  }
+
+  .Comeback-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $whiteSecondColor;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .container {
+      width: 85vw;
+      margin: 0 auto;
+    }
+
+    .flex {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 500px) and (orientation: landscape) {
+        flex-direction: row;
+      }
+
+      .first {
+        width: 100%;
+        height: 40vh;
+        margin-top: 5vh;
+        margin-bottom: 2.5vh;
+        @media (min-width: 700px) and (orientation: portrait) {
+          height: 50vh;
+        }
+        @media (min-width: 500px) and (orientation: landscape) {
+          width: 50%;
+          height: 100vh;
+          margin-top: 10vh;
+        }
+        @media (min-width: 1800px) and (orientation: landscape) {
+          margin-top: 15vh;
+        }
+        .img {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          background-image: url("../../Img/mainPage/conor.jpg");
+          background-position: top center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          @media (min-width: 700px) and (orientation: portrait) {
+            background-position: top center;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            width: 100%;
+            height: 80%;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            width: 100%;
+            height: 70%;
+          }
+        }
+      }
+
+      .second {
+        width: 100%;
+        height: 40vh;
+        margin-top: 2.5vh;
+        margin-bottom: 5vh;
+        @media (min-width: 500px) and (orientation: landscape) {
+          width: 50%;
+          height: 100%;
+          margin-top: 10vh;
+        }
+        @media (min-width: 1800px) and (orientation: landscape) {
+          margin-top: 15vh;
+        }
+
+        h3 {
+          text-align: left;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          @media (min-width: 400px) and (orientation: portrait) {
+            font-size: 2rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 4rem;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            font-size: 1.5rem;
+            text-align: center;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 4rem;
+            margin-top: 2rem;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            font-size: 5rem;
+          }
+          @media (min-width: 1800px) and (orientation: landscape) {
+            font-size: 8rem;
+          }
+        }
+        p {
+          text-align: left;
+          font-size: 1.4rem;
+          margin: 0 0 10px 0;
+          @media (min-width: 400px) and (orientation: portrait) {
+            font-size: 1.6rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 2rem;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            text-align: center;
+            font-size: 1.2rem;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 2.5rem;
+            font-weight: 400;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            font-size: 2.5rem;
+          }
+          @media (min-width: 1800px) and (orientation: landscape) {
+            font-size: 4.5rem;
+          }
+        }
+        .text {
+          text-align: justify;
+          width: 50%;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          @media (min-width: 400px) and (orientation: portrait) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            width: 100%;
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            font-weight: 300;
+            margin-top: 3rem;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+          }
+          @media (min-width: 1800px) and (orientation: landscape) {
+            font-size: 3rem;
+            line-height: 4.5rem;
+          }
+        }
+      }
+    }
+    .imgPorier {
+      width: 150px;
+      height: 220px;
+      margin: 0 auto;
+      background-image: url("../../Img/mainPage/porierPNG.png");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: rotateY(-180deg);
+      @media (min-width: 700px) and (orientation: portrait) {
+        width: 250px;
+        height: 380px;
+      }
+      @media (min-width: 500px) and (orientation: landscape) {
+        width: 120px;
+        height: 170px;
+      }
+      @media (min-width: 600px) and (orientation: landscape) {
+        width: 150px;
+        height: 200px;
+      }
+      @media (min-width: 700px) and (orientation: landscape) {
+        width: 200px;
+        height: 250px;
+      }
+      @media (min-width: 1000px) and (orientation: landscape) {
+        width: 300px;
+        height: 350px;
+      }
+      @media (min-width: 1200px) and (orientation: landscape) {
+        width: 400px;
+        height: 480px;
+      }
+      @media (min-width: 1800px) and (orientation: landscape) {
+        width: 450px;
+        height: 580px;
+      }
+    }
+  }
+
+  .Fight-island {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $blackColor;
+    background-image: url("../../Img/mainPage/fightIslandBg.jpg");
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .container {
+      width: 85vw;
+      margin: 0 auto;
+    }
+
+    .text {
+      margin: 15% 0 0 0;
+      text-align: center;
+      @media (min-width: 400px) and (orientation: portrait) {
+        margin: 25% 10% 0 10%;
+      }
+      @media (min-width: 700px) and (orientation: portrait) {
+        margin: 25% 15% 0 15%;
+      }
+      @media (min-width: 500px) and (orientation: landscape) {
+        margin: 5% 0 0 0;
+        width: 50%;
+      }
+      @media (min-width: 700px) and (orientation: landscape) {
+        margin: 10% 0 0 0;
+      }
+      @media (min-width: 1000px) and (orientation: landscape) {
+        margin: 20% 0 0 0;
+      }
+      @media (min-width: 1400px) and (orientation: landscape) {
+        margin: 10% 0 0 0;
+        padding: 0 5%;
+      }
+
+      h3 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 3rem;
+        @media (min-width: 400px) and (orientation: portrait) {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          font-size: 5rem;
+          line-height: 5rem;
+        }
+        @media (min-width: 500px) and (orientation: landscape) {
+          font-size: 2rem;
+          line-height: 2rem;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        @media (min-width: 1400px) and (orientation: landscape) {
+          font-size: 5rem;
+          line-height: 5rem;
+        }
+      }
+      span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        @media (min-width: 400px) and (orientation: portrait) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          font-size: 2rem;
+        }
+        @media (min-width: 500px) and (orientation: landscape) {
+          font-size: 1rem;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 1400px) and (orientation: landscape) {
+          font-size: 2rem;
+        }
+      }
+      h4 {
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+        @media (min-width: 400px) and (orientation: portrait) {
+          font-size: 1.8rem;
+          margin-top: 3rem;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          font-size: 2rem;
+          margin-top: 4rem;
+        }
+        @media (min-width: 500px) and (orientation: landscape) {
+          font-size: 1.2rem;
+          margin-top: 1rem;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-top: 4rem;
+        }
+        @media (min-width: 1400px) and (orientation: landscape) {
+          font-size: 3rem;
+          font-weight: 600;
+          margin-top: 5rem;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+        @media (min-width: 400px) and (orientation: portrait) {
+          font-size: 1.4rem;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          font-size: 1.8rem;
+        }
+        @media (min-width: 500px) and (orientation: landscape) {
+          font-size: 1rem;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          font-size: 1.4rem;
+        }
+        @media (min-width: 1400px) and (orientation: landscape) {
+          font-size: 2rem;
+          line-height: 3.4rem;
+        }
+      }
+    }
+  }
+
+  .Records {
+    position: relative;
+    width: 100%;
+    /*     height: 100vh; */
+    background-color: $whiteColor;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .container {
+      width: 85vw;
+      margin: 0 auto;
+    }
+    h1 {
+      margin-top: 4rem;
+      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      @media (min-width: 1400px) {
+        font-size: 5rem;
+        font-weight: 500;
+      }
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 700px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .record {
+        position: relative;
+        margin: 4rem auto 0rem;
+
+        .img {
+          width: 280px;
+          height: 200px;
+          background-image: url("../../Img/mainPage/mostFight.jpg");
+          background-position: center center;
+          background-size: cover;
+          @media (min-width: 1400px) {
+            width: 25vw;
+            height: 35vh;
+          }
+
+          .text {
+            color: white;
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .number {
+              font-size: 6rem;
+              font-weight: 800;
+              text-align: center;
+              line-height: 5.5rem;
+              @media (min-width: 1400px) {
+                font-size: 8rem;
+                line-height: 7rem;
+              }
+            }
+            .author {
+              font-size: 1.5rem;
+              text-align: center;
+              z-index: 10;
+              line-height: 2rem;
+              font-weight: 500;
+            }
+          }
+        }
+        .mostWin {
+          background-image: url("../../Img/mainPage/mostWin.jpg");
+        }
+        .mostKo {
+          background-image: url("../../Img/mainPage/mostKo.jpg");
+        }
+        .mostFinishes {
+          background-image: url("../../Img/mainPage/mostFinishes.jpg");
+        }
+        .fastestFinishes {
+          background-image: url("../../Img/mainPage/fastesFinishes.jpg");
+        }
+        .mostDefeated {
+          background-image: url("../../Img/mainPage/mostDefendedBelt.jpg");
+        }
+        .subtitle {
+          text-align: right;
+          font-weight: 500;
+          font-size: 1.5rem;
+          @media (min-width: 1400px) {
+            font-size: 2rem;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #000;
+            bottom: 10px;
+            width: 60%;
+            @media (min-width: 1400px) {
+              bottom: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Future {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $whiteSecondColor;
+    overflow: hidden;
+    margin: 2rem auto 0;
+    @media (min-width: 1000px) and (orientation: landscape) {
+      height: 70vh;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 500px) and (orientation: landscape) {
+        flex-direction: row;
+      }
+
+      .wrapper {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 500px) and (orientation: landscape) {
+          width: 50vw;
+          height: 100vh;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          width: 50vw;
+          height: 70vh;
+        }
+
+        .content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-left: 7.5%;
+            @media (min-width: 700px) {
+              font-size: 1.5rem;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+            @media (min-width: 1400px) {
+              font-size: 2rem;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              font-weight: 400;
+            }
+          }
+
+          .img {
+            width: 100%;
+            height: 75%;
+            background-image: url("../../Img/mainPage/justHappend.jpg");
+            background-position: top center;
+            background-size: cover;
+          }
+          .imgSecond {
+            background-image: url("../../Img/mainPage/upNext.jpg");
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "./variable";
+@import "../components/Navigation/Navigation.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/MainPage/MainPage.scss";
+@import "../components/Rankings/Rankings.scss";
+@import "../components/History/History.scss";
+@import "../components/HallOfFame/HallOfFame.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", arial, sans-serif;
+  font-size: 62.5%;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 30px;
+  height: 60px;
+  margin-left: -20px;
+  top: 95%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px $whiteColor;
+  border-radius: 25px;
+  @media (min-width: 700px) and (orientation: landscape) {
+    width: 25px;
+    height: 50px;
+  }
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: $whiteColor;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

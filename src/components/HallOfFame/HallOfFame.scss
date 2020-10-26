@@ -1,0 +1,345 @@
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: y proximity;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1100vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+
+    .container {
+      width: 85vw;
+      height: 100vh;
+      margin: 0 auto;
+    }
+
+    .slide {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+    }
+
+    .first {
+      background-image: url("../../Img/HallOfFame/mainBg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100vw;
+      height: 100vh;
+
+      .text {
+        position: absolute;
+        color: $whiteColor;
+        bottom: 10%;
+        text-align: center;
+        width: 85vw;
+        @media (min-width: 760px) and (orientation: portrait) {
+          bottom: 15%;
+        }
+
+        h1 {
+          font-size: 12rem;
+          font-weight: 900;
+          font-style: italic;
+          line-height: 10rem;
+          @media (min-width: 760px) and (orientation: portrait) {
+            font-size: 15rem;
+            line-height: 13rem;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            font-size: 8rem;
+            line-height: 6rem;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 12rem;
+            line-height: 10rem;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            font-size: 15rem;
+            line-height: 12rem;
+          }
+        }
+        p {
+          font-weight: 600;
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .two {
+      background-image: url("../../Img/HallOfFame/gracie.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100vw;
+      height: 100vh;
+      .container {
+        position: relative;
+        width: 85vw;
+        height: 100vh;
+        margin: 0 auto;
+      }
+
+      .info-wrapper {
+        position: relative;
+        width: 80%;
+        height: 65%;
+        background: #000000;
+        background: -webkit-linear-gradient(to top, #434343, #000000);
+        background: linear-gradient(to top, #434343, #000000);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        border: 4px solid $borderColor;
+        overflow: hidden;
+        @media (min-width: 700px) and (orientation: portrait) {
+          max-width: 500px;
+          max-height: 650px;
+        }
+        @media (min-width: 500px) and (orientation: landscape) {
+          transform: translate(0%, -50%);
+          width: 23rem;
+          height: 26rem;
+          left: 0;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          width: 35rem;
+          height: 45rem;
+          border: 8px solid $borderColor;
+        }
+        @media (min-width: 1280px) and (orientation: landscape) {
+          width: 40rem;
+          height: 50rem;
+          border: 8px solid $borderColor;
+        }
+
+        .kind {
+          position: absolute;
+          color: $whiteColor;
+          transform: rotate(-60deg);
+          bottom: 8.5rem;
+          left: -6.5rem;
+          font-size: 9rem;
+          filter: blur(0.3rem);
+          text-transform: uppercase;
+          opacity: 0.3;
+          color: $borderColor;
+          @media (min-width: 360px) and (orientation: portrait) {
+            transform: rotate(-60deg);
+            bottom: 11rem;
+            left: -9rem;
+            font-size: 11rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            transform: rotate(-60deg);
+            bottom: 19rem;
+            left: -9rem;
+            font-size: 18rem;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            transform: rotate(-45deg);
+            bottom: 5.5rem;
+            left: -3.5rem;
+            font-size: 9rem;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            transform: rotate(-50deg);
+            bottom: 12rem;
+            left: -5.5rem;
+            font-size: 13rem;
+          }
+          @media (min-width: 1280px) and (orientation: landscape) {
+            transform: rotate(-50deg);
+            bottom: 13rem;
+            left: -7rem;
+            font-size: 14rem;
+          }
+        }
+
+        .hall {
+          color: $whiteColor;
+          text-align: center;
+          z-index: 10 !important;
+          font-size: 3rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-top: 10%;
+          margin-bottom: 0.3rem;
+          @media (min-width: 360px) and (orientation: portrait) {
+            font-size: 3.5rem;
+            margin-top: 15%;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 6rem;
+            margin-top: 15%;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            font-size: 2rem;
+            margin-top: 8%;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 5rem;
+            margin-top: 12%;
+          }
+        }
+
+        .fame {
+          color: $whiteColor;
+          text-align: center;
+          z-index: 12 !important;
+          font-size: 3rem;
+          line-height: 3rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          border-bottom: 8px solid $borderColor;
+          width: 40%;
+          margin: 0 auto;
+          overflow: hidden;
+          @media (min-width: 360px) and (orientation: portrait) {
+            font-size: 3.5rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 6rem;
+            line-height: 6rem;
+            border-bottom: 15px solid $borderColor;
+            width: 33%;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            font-size: 2rem;
+            line-height: 2rem;
+            width: 26%;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 5rem;
+            line-height: 5rem;
+            width: 40%;
+            border-bottom: 12px solid $borderColor;
+          }
+          @media (min-width: 1280px) and (orientation: landscape) {
+            width: 35%;
+          }
+        }
+
+        .name {
+          color: $whiteColor;
+          text-align: center;
+          z-index: 12 !important;
+          margin-top: 15%;
+          font-size: 2rem;
+          font-weight: 500;
+          @media (min-width: 360px) and (orientation: portrait) {
+            font-size: 2.5rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 4.5rem;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            font-size: 2rem;
+            margin-top: 10%;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 3rem;
+          }
+        }
+
+        .achievements {
+          color: $whiteColor;
+          text-align: center;
+          z-index: 12 !important;
+          margin-top: 15%;
+          width: 50%;
+          margin: 5% auto;
+          font-size: 1.2rem;
+          font-weight: 400;
+          @media (min-width: 360px) and (orientation: portrait) {
+            font-size: 1.4rem;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            font-size: 2rem;
+            width: 40%;
+          }
+          @media (min-width: 500px) and (orientation: landscape) {
+            font-size: 1rem;
+            margin-top: 0%;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            font-size: 1.5rem;
+            margin-top: 2%;
+          }
+          @media (min-width: 1280px) and (orientation: landscape) {
+            width: 35%;
+          }
+        }
+      }
+      .firstLastName {
+        display: none;
+
+        @media (min-width: 500px) and (orientation: landscape) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          /*           background-color: red; */
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          @media (min-width: 700px) and (orientation: landscape) {
+            width: 300px;
+            height: 300px;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            width: 400px;
+            height: 400px;
+          }
+          @media (min-width: 1280px) and (orientation: landscape) {
+            width: 600px;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            width: 1000px;
+          }
+          p {
+            color: $borderColor;
+            opacity: 0.4;
+            filter: brightness(-50);
+            z-index: 20 !important;
+            font-size: 4.5rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            right: 0;
+            line-height: 4rem;
+            top: 50%;
+            @media (min-width: 700px) and (orientation: landscape) {
+              font-size: 6rem;
+              line-height: 5rem;
+            }
+            @media (min-width: 1000px) and (orientation: landscape) {
+              font-size: 8rem;
+              line-height: 7rem;
+            }
+            @media (min-width: 1280px) and (orientation: landscape) {
+              font-size: 11rem;
+              line-height: 10rem;
+            }
+            @media (min-width: 1280px) and (orientation: landscape) {
+              font-size: 14rem;
+              line-height: 13rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

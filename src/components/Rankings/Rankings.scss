@@ -1,0 +1,185 @@
+.RankingsPage {
+  position: relative;
+  overflow-x: hidden;
+
+  .first-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $blackColor;
+    background-image: url("../../Img/rankingsPage/mainBg.jpg");
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .container {
+      width: 85vw;
+      height: 100vh;
+      margin: 0 auto;
+    }
+  }
+
+  .text {
+    position: absolute;
+    color: $whiteColor;
+    bottom: 10%;
+    text-align: center;
+    width: 85vw;
+    @media (min-width: 760px) and (orientation: portrait) {
+      bottom: 15%;
+    }
+
+    h1 {
+      font-size: 12rem;
+      font-weight: 900;
+      font-style: italic;
+      line-height: 10rem;
+      @media (min-width: 760px) and (orientation: portrait) {
+        font-size: 15rem;
+        line-height: 13rem;
+      }
+      @media (min-width: 500px) and (orientation: landscape) {
+        font-size: 8rem;
+        line-height: 6rem;
+      }
+      @media (min-width: 1000px) and (orientation: landscape) {
+        font-size: 12rem;
+        line-height: 10rem;
+      }
+      @media (min-width: 1400px) and (orientation: landscape) {
+        font-size: 15rem;
+        line-height: 12rem;
+      }
+    }
+    p {
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+  }
+
+  .ranking-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: $blackColor;
+    background-image: url("../../Img/rankingsPage/russia.jpg");
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .container {
+      width: 85vw;
+      height: 100vh;
+      margin: 0 auto;
+    }
+
+    .flex {
+      display: flex;
+      width: 85vw;
+      height: 100%;
+      flex-direction: row;
+      position: relative;
+      justify-content: space-around;
+
+      .ranking {
+        margin-top: 10%;
+        @media (min-width: 360px) and (orientation: portrait) {
+          margin-top: 25%;
+        }
+        @media (min-width: 700px) and (orientation: portrait) {
+          margin-top: 30%;
+        }
+        @media (min-width: 500px) and (orientation: landscape) {
+          margin-top: 5%;
+        }
+        @media (min-width: 700px) and (orientation: landscape) {
+          margin-top: 10%;
+        }
+        ol {
+          margin-left: 0%;
+          li {
+            color: $whiteColor;
+            font-size: 1.3rem;
+            &:nth-child(1) {
+              font-weight: bold;
+              @media (min-width: 700px) and (orientation: portrait) {
+                font-size: 2.5rem;
+              }
+              @media (min-width: 1400px) and (orientation: landscape) {
+                font-size: 3rem;
+              }
+            }
+            @media (min-width: 400px) and (orientation: portrait) {
+              font-size: 1.6rem;
+            }
+            @media (min-width: 700px) and (orientation: portrait) {
+              font-size: 2rem;
+            }
+            @media (min-width: 500px) and (orientation: landscape) {
+              font-size: 1rem;
+            }
+            @media (min-width: 1000px) and (orientation: landscape) {
+              font-size: 2rem;
+            }
+            @media (min-width: 1400px) and (orientation: landscape) {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+
+      .text {
+        bottom: 10%;
+      }
+      .image {
+        margin-top: 45%;
+        @media (min-width: 500px) and (orientation: landscape) {
+          margin-top: 15%;
+        }
+        @media (min-width: 1000px) and (orientation: landscape) {
+          margin-top: 20%;
+        }
+        @media (min-width: 1200px) and (orientation: landscape) {
+          margin-top: 15%;
+          margin-left: 10%;
+        }
+        @media (min-width: 1800px) and (orientation: landscape) {
+          margin-top: 10%;
+        }
+        img {
+          width: 100px;
+          transform: rotateY(-180deg);
+          @media (min-width: 400px) and (orientation: portrait) {
+            width: 150px;
+          }
+          @media (min-width: 700px) and (orientation: portrait) {
+            width: 200px;
+          }
+          @media (min-width: 1000px) and (orientation: landscape) {
+            width: 200px;
+          }
+          @media (min-width: 1200px) and (orientation: landscape) {
+            width: 250px;
+          }
+          @media (min-width: 1400px) and (orientation: landscape) {
+            width: 300px;
+          }
+          @media (min-width: 1800px) and (orientation: landscape) {
+            width: 400px;
+          }
+        }
+        .record {
+          text-align: center;
+          color: $whiteColor;
+          font-size: 1.5rem;
+          font-weight: 600;
+          @media (min-width: 1400px) and (orientation: landscape) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
