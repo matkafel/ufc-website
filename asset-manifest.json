@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ufc-website/static/css/main.5b28880a.chunk.css",
-    "main.js": "/ufc-website/static/js/main.56527286.chunk.js",
-    "main.js.map": "/ufc-website/static/js/main.56527286.chunk.js.map",
+    "main.css": "/ufc-website/static/css/main.80ba23dd.chunk.css",
+    "main.js": "/ufc-website/static/js/main.88f2243a.chunk.js",
+    "main.js.map": "/ufc-website/static/js/main.88f2243a.chunk.js.map",
     "runtime-main.js": "/ufc-website/static/js/runtime-main.1cc2bf11.js",
     "runtime-main.js.map": "/ufc-website/static/js/runtime-main.1cc2bf11.js.map",
     "static/css/2.4707e12a.chunk.css": "/ufc-website/static/css/2.4707e12a.chunk.css",
     "static/js/2.42b9c9a2.chunk.js": "/ufc-website/static/js/2.42b9c9a2.chunk.js",
     "static/js/2.42b9c9a2.chunk.js.map": "/ufc-website/static/js/2.42b9c9a2.chunk.js.map",
     "index.html": "/ufc-website/index.html",
-    "precache-manifest.043aac93f0145111c50da68c1aec5c84.js": "/ufc-website/precache-manifest.043aac93f0145111c50da68c1aec5c84.js",
+    "precache-manifest.556251edd6567003c501e49a18a5da0d.js": "/ufc-website/precache-manifest.556251edd6567003c501e49a18a5da0d.js",
     "service-worker.js": "/ufc-website/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/ufc-website/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.5b28880a.chunk.css.map": "/ufc-website/static/css/main.5b28880a.chunk.css.map",
+    "static/css/main.80ba23dd.chunk.css.map": "/ufc-website/static/css/main.80ba23dd.chunk.css.map",
     "static/js/2.42b9c9a2.chunk.js.LICENSE.txt": "/ufc-website/static/js/2.42b9c9a2.chunk.js.LICENSE.txt",
     "static/media/Khabib.png": "/ufc-website/static/media/Khabib.8adcacd7.png",
     "static/media/base.scss": "/ufc-website/static/media/upNext.f21adb13.jpg",
@@ -56,7 +56,7 @@
     "static/js/runtime-main.1cc2bf11.js",
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.42b9c9a2.chunk.js",
-    "static/css/main.5b28880a.chunk.css",
-    "static/js/main.56527286.chunk.js"
+    "static/css/main.80ba23dd.chunk.css",
+    "static/js/main.88f2243a.chunk.js"
   ]
 }
