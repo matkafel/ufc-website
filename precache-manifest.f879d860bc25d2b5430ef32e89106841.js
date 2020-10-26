@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ac4d258f0aaa51c63d3f55815b31265",
+    "revision": "d5176688ef73cbcdf252b2d959105060",
     "url": "/ufc-website/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ufc-website/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "f7b6b5ee9d15aef55075",
+    "revision": "6c66e6d5160d51c96313",
     "url": "/ufc-website/static/css/main.80ba23dd.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ufc-website/static/js/2.42b9c9a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f7b6b5ee9d15aef55075",
-    "url": "/ufc-website/static/js/main.88f2243a.chunk.js"
+    "revision": "6c66e6d5160d51c96313",
+    "url": "/ufc-website/static/js/main.6b00d6a7.chunk.js"
   },
   {
     "revision": "6dfb2dcc187bec735093",
